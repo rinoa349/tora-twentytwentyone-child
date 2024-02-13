@@ -1,0 +1,73 @@
+.menu_display {
+  font-family: 'NotoSerifJP-ExtraLight';
+  height: 100%;
+  width: 100%;
+
+}
+
+.under_line {
+  border-top: 1px solid rgba(12, 11, 11, 0.3);
+  border-width: 1.5px;
+  width: 85%;
+  margin: 0 auto 0;
+  padding: 2% 0 1% 0;
+}
+
+.menu_display_main__title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(227, 202, 58);
+}
+
+.menu_display_title {
+  padding: 2rem 0 0.4rem 10%;
+  font-size: 23px;
+  color: rgb(193, 166, 18);
+  font-weight: bolder;
+}
+
+.menu_display__sub_title {
+  padding-left: 4%;
+  font-size: 18px;
+}
+
+.menu_display_sub_title {
+  display: flex;
+  justify-content: space-around;
+  line-height: 2em;
+  font-size: 1.2em;
+}
+
+.menu_display_title_price {
+  text-align: center;
+  font-size: 100%;
+}
+
+.background {
+  width: 100vw;
+  height: 100%;
+  background-image: image-url('background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+}
+
+/******* レスポンシブ *******/
+@media screen and (max-width: 767px) {
+  .menu_display_main__title {
+    font-size: 2.5rem;
+  }
+  .menu_display_title {
+    font-size: 1.1rem;
+  }
+  .menu_display__sub_title {
+    font-size: 1rem;
+  }
+  .menu_display_sub_title {
+    font-size: 0.8rem;
+    line-height: 1em;
+  }
+}

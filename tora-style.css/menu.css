@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/*
+Theme Name: page-menu.php
+*/
+
+h3 {
+  color: red;
+}
+
+.menu {
+  background-color: #fff6e5;
+  font-family: 'NotoSerifJP-ExtraLight';
+  padding-top: 4rem;
+  width: auto;
+  height: auto;
+}
+
+.este-image {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  opacity: 0.7;
+  object-fit: cover;
+}
+
+.este-top-title {
+  font-size: 60px;
+  opacity: 0.5;
+  color: gray;
+  position: absolute;
+  top: 465px;
+  left: 12px;
+  object-fit: contain;
+}
+
+.top-menu {
+  background-color: rgb(242, 234, 234);
+  margin-top: 1.8rem;
+  height: 250px;
+  width: 100%;
+}
+
+.top-menu-comment {
+  padding: 5.5rem 0 0 6.5rem;
+  line-height: 26px;
+  font-size: 0.6rem;
+  opacity: 0.5;
+}
+
+.middle-menu {
+  background-color: #fff6e5;
+  font-family: 'NotoSerifJP-ExtraLight';
+}
+
+/******* カイロメニュー *******/
+.kairo_menu {
+  
+}
+.kairo_container {
+  display: flex;
+  margin: 3em 5em;
+  padding: 1em;
+  background-color: rgb(242, 234, 234);
+  border-radius: 20px;
+}
+
+.kairo_image {
+  border-radius: 20px;
+  width: 30%;
+  height: 12rem;
+}
+
+.kairo_menu_title {
+  padding: 1em 0 0 1.5em;
+  line-height: 1.8em;
+  opacity: 0.5;
+}
+
+/* スマホ表示時 */
+@media screen and (min-width:480px) {}
+@media screen and (min-width:768px) and (max-width:1024px) {}
+@media screen and (min-width:1024px) {}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    background-color: #fff6e5;
+    font-family: 'NotoSerifJP-ExtraLight';
+    padding-top: 0.1rem;
+    width: auto;
+    height: auto;
+  }
+  .este-image {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    opacity: 0.7;
+    object-fit: cover;
+  }
+  
+  .este-top-title {
+    font-size: 25px;
+    opacity: 0.5;
+    color: gray;
+    position: absolute;
+    top: 190px;
+    left: 7px;
+    object-fit: contain;
+  }
+  
+  .top-menu {
+    background-color: rgb(242, 234, 234);
+    margin-top: 0.8rem;
+    height: 250px;
+    width: 100%;
+  }
+  
+  .top-menu-comment {
+    padding: 3rem 0 0 5rem;
+    line-height: 18px;
+    font-size: 0.6rem;
+    opacity: 0.5;
+  }
+
+
+  .kairo_container {
+    display: flex;
+    margin: 6px 6px;
+    padding: 7px;
+    background-color: rgb(242, 234, 234);
+    border-radius: 20px;
+  }
+  
+  .kairo_image {
+    border-radius: 20px;
+    width: 30%;
+    height: 6rem;
+  }
+  
+  .kairo_menu_title {
+    padding: 3px 0 0 10px;
+    line-height: 15px;
+    opacity: 0.5;
+    font-size: 11px;
+  }
+
+  .kairo_sub_title {
+    font-size: 5px;
+  }
+}

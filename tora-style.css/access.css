@@ -1,0 +1,80 @@
+.access {
+  background-color: #fff6e5;
+  font-family: 'NotoSerifJP-ExtraLight';
+}
+
+.title {
+  text-align: center;
+  padding: 1rem;
+  opacity: 0.6;
+}
+
+.title-up {
+  font-size: 0.8rem
+}
+
+.title-down {
+  font-size: 1.2rem;
+}
+
+.title-middle {
+  padding: 1rem;
+}
+
+.access-adress {
+  text-align: center;
+  margin: 5em 20em;
+  padding: 2.5em;
+  background-color: rgb(242, 234, 234);
+  border-radius: 20px;
+}
+
+.home {
+  width: 80%;
+  height: 30em;
+}
+
+.home-image {
+  object-fit: cover;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.name {
+  padding: 1rem 0 1rem 0;
+}
+
+.adress {
+  padding-bottom: 1rem;
+}
+.phone-number {
+  padding-bottom: 1rem;
+}
+
+.time {
+  padding-bottom: 1rem;
+}
+
+.map {
+  padding-bottom: 4rem;
+}
+
+
+@media screen and (max-width: 767px) {
+  .access-adress {
+    text-align: center;
+    margin: 2px 2em;
+    padding: 1rem;
+    background-color: rgb(242, 234, 234);
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+  .map {
+    padding-bottom: 1rem;
+  }
+  .home-image {
+    object-fit: cover;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
