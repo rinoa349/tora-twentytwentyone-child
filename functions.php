@@ -5,6 +5,8 @@ if ( !defined( 'ABSPATH' ) ) exit;
 // BEGIN ENQUEUE PARENT ACTION
 // AUTO GENERATED - Do not modify or remove comment markers above or below:
 
+/*  ・chld_thm_cfgのエラーが出る
+
 if ( !function_exists( 'chld_thm_cfg_locale_css' ) ):
     function chld_thm_cfg_locale_css( $uri ){
         if ( empty( $uri ) && is_rtl() && file_exists( get_template_directory() . '/rtl.css' ) )
@@ -20,5 +22,11 @@ if ( !function_exists( 'child_theme_configurator_css' ) ):
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
+*/
 
 // END ENQUEUE PARENT ACTION
+
+
+add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_style('my_style', get_stylesheet_directory_uri() . '/style.css');
+  }, 11);

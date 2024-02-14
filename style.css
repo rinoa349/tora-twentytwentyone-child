@@ -10,6 +10,10 @@ Version: 2.1.1707813160
 Updated: 2024-02-13 17:32:40
 
 */
-.entry-footer {
-  color: red;
+
+body { background: pink; }
+
+.entry-title a {
+  font-size: 20px;
 }
+
