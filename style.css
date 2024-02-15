@@ -11,9 +11,355 @@ Updated: 2024-02-13 17:32:40
 
 */
 
-body { background: pink; }
+.site-main {
+  padding-top: 5px;
+}
 
 .entry-title a {
   font-size: 20px;
 }
 
+.site-footer > .site-info .powered-by {
+  text-align: center;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+.main-page {
+  background-color: #fff6e5;
+  font-family: 'NotoSerifJP-ExtraLight';
+}
+
+#photo {
+  width: 100%;
+  height: 40rem;
+  margin: 0 auto;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+}
+
+#photo img {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100vw; 
+  background-size: cover;
+  height: 100%;
+}
+
+
+/**********  メニュー  **********/
+
+.menu-content {
+  padding-top: 1%;
+}
+.title_menu {
+  height: 21.47px;
+  width: 40px;
+  display: block;
+  margin: 0 auto;
+  padding: 35px 0 10px 0;
+}
+
+.menu_title {
+  text-align: center;
+  font-size: 18px;
+}
+
+.menu_title_top {
+  line-height: 32px;
+}
+
+.este1-image {
+  height: 20rem;
+  width: 45%;
+  padding: 40px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 80px;
+}
+
+.menu_title_middle {
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 30px;
+}
+
+.menu-link {
+  text-align: center;
+  padding: 30px;
+  margin-top: 3%;
+  opacity: 0.7;
+}
+
+.menu_link {
+  border: #000 1px solid;
+  text-decoration: none;
+  padding: 2%;
+  font-size: 0.8rem;
+}
+
+/*********アクセス情報*********/
+
+.access-top {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.home {
+  width: 100%;
+  height: 20rem;
+}
+
+.access-comment {
+  text-align: center;
+}
+
+.access-flex {
+  display: flex;
+}
+
+.access-image {
+  width: 55%;
+  margin: auto;
+}
+
+.access-information {
+  width: 45%;
+  margin: auto .5rem;
+}
+.name {
+  padding: 1rem 0 1rem 0;
+}
+
+.adress {
+  padding-bottom: 1rem;
+}
+.phone-number {
+  padding-bottom: 1rem;
+}
+
+.time {
+  padding-bottom: 1rem;
+}
+
+  @media screen and (max-width: 767px) {
+    .access-flex {
+      display: block;
+    }
+    .access-flex .access-image {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .access-flex .access-information {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+ /* スマホ表示時 */
+ @media screen and (min-width:480px) {}
+ @media screen and (min-width:768px) and (max-width:1024px) {}
+ @media screen and (min-width:1024px) {}
+
+
+ /********* お客様の声 ************/
+ .slider > div {
+	max-width:50%;
+	max-height:800px;
+	position:relative;
+	border:1px solid lightgray;
+  margin: 0 auto;
+}
+.slider > div > ul {
+	padding:0;
+	margin:0;
+	width:100%;
+	height:100%;
+	font-size:0;
+	overflow:hidden;
+	white-space:nowrap;
+	scroll-snap-type:x mandatory;
+	scroll-behavior:smooth;
+}
+.slider img {
+	width:100%;
+	height:100%;
+	object-fit:contain;
+	image-rendering:-webkit-optimize-contrast;
+}
+.slider > div > ul > li {
+	list-style:none;
+	display:inline-block;
+	scroll-snap-align:center;
+	width:100%;
+	height:100%;
+}
+.slider .arrow:before {
+	content:'';
+	position:absolute;
+	width:10px;
+	height:10px;
+	border-left:4px solid gray;
+	border-bottom:4px solid gray;
+}
+.slider .arrow {
+	top:0;
+	position:absolute;
+	width:8%;
+	height:100%;
+	background:rgba(255,255,255,0);
+	cursor:pointer;
+}
+.slider .arrow:hover {
+	background:rgba(255,255,255,0.3);
+}
+.slider .left {
+	left:0px;
+}
+.slider .left:before {
+	top:calc(50% - 10px);
+	left:calc(50% - 4px);
+	transform:rotate(45deg);
+}
+.slider .right {
+	right:0;
+}
+.slider .right:before {
+	top:calc(50% - 10px);
+	right:calc(50% - 6px);
+	transform:rotate(-135deg);
+}
+@media screen and (max-width:480px) {
+	.slider > div > ul {
+		overflow-x:auto;
+	}
+}
+.slider .thumbs {
+	max-width:38%;
+	border:1px solid lightgray;
+	list-style:none;
+	margin:0 auto;
+	padding:0;
+	font-size:0;
+}
+.slider .thumbs li {
+	display:inline-block;
+	cursor:pointer;
+	width:calc(25% - 4px);
+	border:2px solid white;
+	opacity:0.5;
+}
+.slider .thumbs li.selected {
+	border:2px solid gray;
+	opacity:1;
+}
+.slider .thumbs img {
+	width:100%;
+	object-fit:contain;
+	padding:0;
+  height: 10%;
+  display: block;
+}
+
+.questionnaire-main {
+  padding: 100px 0 100px 0;
+}
+
+.line {
+  border-top: 1px solid rgba(151, 149, 149, 0.2);
+  border-width: medium;
+  width: 80%;
+  margin: 3% auto 0;
+}
+
+@media screen and (max-width: 499px) {
+  /*　画面サイズ 499pxまで適用　*/
+}
+
+@media screen and (min-width: 500px) and (max-width: 999px) {
+  /*　画面サイズ 500pxから999pxまで適用　*/
+}
+
+@media screen and (min-width:1000px) {
+  /*　画面サイズ 1000px以上から適用　*/
+}
+
+
+@media screen and (max-width: 767px) {
+  * {
+    margin:0;
+    padding:0;
+  }
+  #photo {
+      height: 15rem; 
+  }
+   /*************************/
+    .title {
+      text-align: center;
+      padding: 1rem;
+      opacity: 0.6;
+    }
+    .title-up {
+      font-size: 0.8rem
+    }
+    .title-down {
+      font-size: 0.7rem;
+    }
+    .title-middle {
+      padding: 0.5px;
+    }
+    .este1-image {
+      height: 9rem;
+      width: 60%;
+      padding: 15px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 30px;
+    }
+    .menu_title_middle {
+      font-size: 0.6rem;
+      text-align: center;
+      line-height: 20px;
+    }
+    /*************************/
+    .menu-link {
+      text-align: center;
+      padding: 15px;
+      margin-top: 3%;
+      opacity: 0.7;
+    }
+    .menu_link {
+      border: #000 1px solid;
+      text-decoration: none;
+      padding: 2%;
+      font-size: 0.5rem;
+    }
+    .access-comment {
+      font-size: 0.7rem;
+    }
+    .home {
+      height: 13rem;
+    }
+    /*************************/
+    .slider > div {
+      max-width:65%;
+      max-height:800px;
+      position:relative;
+      border:1px solid lightgray;
+      margin: 0 auto;
+    }
+    .slider .thumbs {
+      max-width:45%;
+      border:1px solid lightgray;
+      list-style:none;
+      margin:0 auto;
+      padding:0;
+      font-size:0;
+    }
+}

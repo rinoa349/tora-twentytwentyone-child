@@ -21,7 +21,7 @@ get_header(); ?>
 
 
 <div class="menu">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/este.jpeg"/>
+  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/este.jpeg"/>
   <div class="este-top-title">HEALTH & BEAUTY</div>
 
 
@@ -39,7 +39,7 @@ get_header(); ?>
     
     <div class="kairo_menu">
       <div class="kairo_container">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kairo_menu1.jpeg"/>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu1.jpeg"/>
         <div class="kairo_menu_title">【　美骨カイロコース　】<br>
           骨盤・全身調整
           <span class="kairo_sub_title">（＊ 初回(プラス30分)カウンセリングと検査が含まれます。）</span><br><br>
@@ -49,7 +49,7 @@ get_header(); ?>
       </div>
 
       <div class="kairo_container">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kairo_menu2.jpeg"/>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu2.jpeg"/>
         <div class="kairo_menu_title">【　エステコース　】<br><br>
           オイルを使った足、背中、お腹、腕、デコルテの全身オールハンドトリートメントに加え<br>
           気になる部位に集中的にアプローチ。
@@ -57,14 +57,14 @@ get_header(); ?>
       </div>
       
       <div class="kairo_container">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kairo_menu3.jpeg"/>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu3.jpeg"/>
         <div class="kairo_menu_title">【　オプションコース（トリートメント）　】<br><br>
           お好みの“時間とメニュー”の組み合わせが楽しめる、当サロンの一番人気のコースです。
         </div>
       </div>
 
       <div class="kairo_container">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kairo_menu4.jpeg"/>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu4.jpeg"/>
       <div class="kairo_menu_title">【　美肌フェイシャル　】<br><br>
           丁寧なクレンジング・洗顔の後、フェイシャルマッサージで血行を良くし、<br>
           くすみやむくみを解消します。
@@ -73,7 +73,7 @@ get_header(); ?>
 
       <div class="menu-link">
         <!--  ↓リンクを貼る↓  -->
-        <h2>詳しくメニューを見る</h2>
+        <a href="<?php echo home_url('/menu-list/'); ?>">詳しくメニューを見る</a>
       </div><br><br>
   </div>
 </div>
