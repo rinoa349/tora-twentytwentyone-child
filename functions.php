@@ -30,3 +30,6 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('my_style', get_stylesheet_directory_uri() . '/style.css');
   }, 11);
+
+//アイキャッチ画像を有効化
+add_theme_support('post-thumbnails');

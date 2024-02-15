@@ -47,7 +47,9 @@ get_header(); ?>
     
   </div>
 
-  <?php
+ 
+
+<?php
 if ( have_posts() ) {
 
 	// Load posts loop.
@@ -66,8 +68,7 @@ if ( have_posts() ) {
 	get_template_part( 'template-parts/content/content-none' );
 
 }
- ?> 
-
+?>
 
  <div class="line"></div>
     <!-- アクセス情報を表示 -->
