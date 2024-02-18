@@ -26,10 +26,20 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
 
-
+//CSSの読み込み
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('my_style', get_stylesheet_directory_uri() . '/style.css');
   }, 11);
+
+  
+  add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_style('menu_style', get_template_directory_uri() . 'tora-style.css/menu.css');
+  }, 10);
+  
+//JavaScriptの読み込み
+  add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_script('top_page', get_stylesheet_directory_uri() . '/top-page.js', [], false, true);
+  });
 
 //アイキャッチ画像を有効化
 add_theme_support('post-thumbnails');

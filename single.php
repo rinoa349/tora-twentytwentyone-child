@@ -6,11 +6,11 @@
         <?php the_title(); ?>
 				<?php
         /* ここからアイキャッチ設定 */
-        echo '<span class="image">';
+        echo '<span class="thumbnail-image">';
         if ( has_post_thumbnail( $post->ID ) ) {
-            echo get_the_post_thumbnail( $post->ID, 'large' );
+            echo get_the_post_thumbnail( $post->ID, 'thumbnail' );
         } else {
-            echo '<img src="' . esc_url( get_theme_file_uri( "img/default-image.png" ) ) . '" alt="">';
+            echo '<img src="' . esc_url( get_theme_file_uri( "/images/default-image.png" ) ) . '" alt="sakura">';
         }
         echo '</span>';
         /* ここまで */

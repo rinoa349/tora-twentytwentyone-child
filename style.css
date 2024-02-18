@@ -52,6 +52,10 @@ Updated: 2024-02-13 17:32:40
   height: 100%;
 }
 
+.title {
+  text-align: center;
+}
+
 
 /**********  メニュー  **********/
 
@@ -85,9 +89,9 @@ Updated: 2024-02-13 17:32:40
 }
 
 .menu_title_middle {
-  font-size: 0.9rem;
+  font-size: 16px;
   text-align: center;
-  line-height: 30px;
+  line-height: 1.8em;
 }
 
 .menu-link {
@@ -102,6 +106,11 @@ Updated: 2024-02-13 17:32:40
   text-decoration: none;
   padding: 2%;
   font-size: 0.8rem;
+}
+
+/********* 投稿 *********/
+.index_post {
+  font-size: 10px;
 }
 
 /*********アクセス情報*********/
@@ -167,110 +176,6 @@ Updated: 2024-02-13 17:32:40
  @media screen and (min-width:480px) {}
  @media screen and (min-width:768px) and (max-width:1024px) {}
  @media screen and (min-width:1024px) {}
-
-
- /********* お客様の声 ************/
- .slider > div {
-	max-width:50%;
-	max-height:800px;
-	position:relative;
-	border:1px solid lightgray;
-  margin: 0 auto;
-}
-.slider > div > ul {
-	padding:0;
-	margin:0;
-	width:100%;
-	height:100%;
-	font-size:0;
-	overflow:hidden;
-	white-space:nowrap;
-	scroll-snap-type:x mandatory;
-	scroll-behavior:smooth;
-}
-.slider img {
-	width:100%;
-	height:100%;
-	object-fit:contain;
-	image-rendering:-webkit-optimize-contrast;
-}
-.slider > div > ul > li {
-	list-style:none;
-	display:inline-block;
-	scroll-snap-align:center;
-	width:100%;
-	height:100%;
-}
-.slider .arrow:before {
-	content:'';
-	position:absolute;
-	width:10px;
-	height:10px;
-	border-left:4px solid gray;
-	border-bottom:4px solid gray;
-}
-.slider .arrow {
-	top:0;
-	position:absolute;
-	width:8%;
-	height:100%;
-	background:rgba(255,255,255,0);
-	cursor:pointer;
-}
-.slider .arrow:hover {
-	background:rgba(255,255,255,0.3);
-}
-.slider .left {
-	left:0px;
-}
-.slider .left:before {
-	top:calc(50% - 10px);
-	left:calc(50% - 4px);
-	transform:rotate(45deg);
-}
-.slider .right {
-	right:0;
-}
-.slider .right:before {
-	top:calc(50% - 10px);
-	right:calc(50% - 6px);
-	transform:rotate(-135deg);
-}
-@media screen and (max-width:480px) {
-	.slider > div > ul {
-		overflow-x:auto;
-	}
-}
-.slider .thumbs {
-	max-width:38%;
-	border:1px solid lightgray;
-	list-style:none;
-	margin:0 auto;
-	padding:0;
-	font-size:0;
-}
-.slider .thumbs li {
-	display:inline-block;
-	cursor:pointer;
-	width:calc(25% - 4px);
-	border:2px solid white;
-	opacity:0.5;
-}
-.slider .thumbs li.selected {
-	border:2px solid gray;
-	opacity:1;
-}
-.slider .thumbs img {
-	width:100%;
-	object-fit:contain;
-	padding:0;
-  height: 10%;
-  display: block;
-}
-
-.questionnaire-main {
-  padding: 100px 0 100px 0;
-}
 
 .line {
   border-top: 1px solid rgba(151, 149, 149, 0.2);
@@ -396,9 +301,9 @@ Updated: 2024-02-13 17:32:40
       border-radius: 30px;
     }
     .menu_title_middle {
-      font-size: 0.6rem;
+      font-size: 16px;
       text-align: center;
-      line-height: 20px;
+      line-height: 1.8em;
     }
     /*************************/
     .menu-link {

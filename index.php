@@ -25,9 +25,30 @@ get_header(); ?>
 <?php endif; ?>
 
 <body>
-  <div class='contents'>
+<div id="photo">
+  <img  class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room5.jpg"/>
+  <img  class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room1.jpg"/>
+  <img  class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room2.jpg"/>
+</div>
 
-    <!-- メニュー画面を表示 -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    const setImg = '#photo';
+    const fadeSpeed = 1600;
+    const switchDelay = 5000;
+
+    $(setImg).children('img').css({opacity:'0'});
+    $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+
+    setInterval(function(){
+        $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+    },switchDelay);
+});
+</script>
+
+<!-- メニュー画面を表示 -->
+  <div class='contents'>
     <div class="menu-content">
         <div class="line"></div>
       <div class="title">
@@ -42,35 +63,20 @@ get_header(); ?>
         <a href="<?php echo home_url('/menu/'); ?>">全てのメニューを見る</a>
       </div>
     </div>
-
-   
-    
   </div>
 
-  <?php
-if ( have_posts() ) {
+<!-- 投稿ループ -->
+  <div class="line"></div>
+    <div class="index_post">
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	// Load posts loop.
-	while ( have_posts() ) {
-		the_post();
+        <p><?php the_date(); ?>　▪️<a href="<?php the_permalink();?>"><?php the_title();?></a></p><br>
 
-		get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) );
-	}
-
-	// Previous/next page navigation.
-	twenty_twenty_one_the_posts_navigation();
-
-} else {
-
-	// If no content, include the "No posts found" template.
-	get_template_part( 'template-parts/content/content-none' );
-
-}
- ?> 
-
-
- <div class="line"></div>
-    <!-- アクセス情報を表示 -->
+      <?php endwhile; endif; ?>
+    </div>
+  <div class="line"></div>
+ 
+<!-- アクセス情報を表示 -->
     <div class="access">
         <div class="title">
           <div class="title-up">information / access</div>

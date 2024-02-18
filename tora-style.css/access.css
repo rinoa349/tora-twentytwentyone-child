@@ -10,11 +10,11 @@
 }
 
 .title-up {
-  font-size: 0.8rem
+  font-size: 16px;
 }
 
 .title-down {
-  font-size: 1.2rem;
+  font-size: 16px;
 }
 
 .title-middle {
@@ -67,7 +67,7 @@
     padding: 1rem;
     background-color: rgb(242, 234, 234);
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 16px;
   }
   .map {
     padding-bottom: 1rem;
