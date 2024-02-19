@@ -33,7 +33,7 @@ add_action('wp_enqueue_scripts', function () {
 
   
   add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('menu_style', get_template_directory_uri() . 'tora-style.css/menu.css');
+    wp_enqueue_style('access_style', get_template_directory_uri() . 'tora-style.css/access.css');
   }, 10);
   
 //JavaScriptの読み込み

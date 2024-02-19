@@ -27,7 +27,7 @@ get_header(); ?>
   </div>
 
   <div class="home-image">
-    <%= image_tag asset_path("este_room6.jpg"), class:"home" %>
+  <img class="home" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room6.jpg"/>
   </div>
 
   <div class="access-adress">

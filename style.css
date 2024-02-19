@@ -108,9 +108,155 @@ Updated: 2024-02-13 17:32:40
   font-size: 0.8rem;
 }
 
+h3 {
+  color: red;
+}
+
+.menu {
+  background-color: #fff6e5;
+  font-family: 'NotoSerifJP-ExtraLight';
+  padding-top: 4rem;
+  width: auto;
+  height: auto;
+}
+
+.este-image {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  opacity: 0.7;
+  object-fit: cover;
+}
+
+.este-top-title {
+  font-size: 60px;
+  opacity: 0.5;
+  color: gray;
+  position: absolute;
+  top: 465px;
+  left: 12px;
+  object-fit: contain;
+}
+
+.top-menu {
+  background-color: rgb(242, 234, 234);
+  margin-top: 1.8rem;
+  height: 250px;
+  width: 100%;
+}
+
+.top-menu-comment {
+  padding: 5.5rem 0 0 6.5rem;
+  line-height: 26px;
+  font-size: 0.6rem;
+  opacity: 0.5;
+}
+
+.middle-menu {
+  background-color: #fff6e5;
+  font-family: 'NotoSerifJP-ExtraLight';
+}
+
+/******* カイロメニュー *******/
+.kairo_menu {
+  
+}
+.kairo_container {
+  display: flex;
+  margin: 3em 5em;
+  padding: 1em;
+  background-color: rgb(242, 234, 234);
+  border-radius: 20px;
+}
+
+.kairo_image {
+  border-radius: 20px;
+  width: 30%;
+  height: 12rem;
+}
+
+.kairo_menu_title {
+  padding: 1em 0 0 1.5em;
+  line-height: 1.8em;
+  opacity: 0.5;
+}
+
+/* スマホ表示時 */
+@media screen and (min-width:480px) {}
+@media screen and (min-width:768px) and (max-width:1024px) {}
+@media screen and (min-width:1024px) {}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    background-color: #fff6e5;
+    font-family: 'NotoSerifJP-ExtraLight';
+    padding-top: 0.1rem;
+    width: auto;
+    height: auto;
+  }
+  .este-image {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    opacity: 0.7;
+    object-fit: cover;
+  }
+  
+  .este-top-title {
+    font-size: 25px;
+    opacity: 0.5;
+    color: gray;
+    position: absolute;
+    top: 190px;
+    left: 7px;
+    object-fit: contain;
+  }
+  
+  .top-menu {
+    background-color: rgb(242, 234, 234);
+    margin-top: 0.8rem;
+    height: 250px;
+    width: 100%;
+  }
+  
+  .top-menu-comment {
+    padding: 3rem 0 0 5rem;
+    line-height: 18px;
+    font-size: 16px;
+    opacity: 0.5;
+  }
+
+
+  .kairo_container {
+    display: flex;
+    margin: 6px 6px;
+    padding: 7px;
+    background-color: rgb(242, 234, 234);
+    border-radius: 20px;
+  }
+  
+  .kairo_image {
+    border-radius: 20px;
+    width: 30%;
+    height: 6rem;
+  }
+  
+  .kairo_menu_title {
+    padding: 3px 0 0 10px;
+    line-height: 15px;
+    opacity: 0.5;
+    font-size: 11px;
+  }
+
+  .kairo_sub_title {
+    font-size: 5px;
+  }
+}
+
 /********* 投稿 *********/
 .index_post {
-  font-size: 10px;
+  font-size: 16px;
+  text-align: center;
 }
 
 /*********アクセス情報*********/
@@ -158,6 +304,82 @@ Updated: 2024-02-13 17:32:40
   padding-bottom: 1rem;
 }
 
+.title {
+  text-align: center;
+  padding: 1rem;
+  opacity: 0.6;
+}
+
+.title-up {
+  font-size: 16px;
+}
+
+.title-down {
+  font-size: 16px;
+}
+
+.title-middle {
+  padding: 1rem;
+}
+
+.access-adress {
+  text-align: center;
+  margin: 5em 20em;
+  padding: 2.5em;
+  background-color: rgb(242, 234, 234);
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.home {
+  height: 30em;
+}
+
+.home-image {
+  object-fit: cover;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.name {
+  padding: 1rem 0 1rem 0;
+}
+
+.adress {
+  padding-bottom: 1rem;
+}
+.phone-number {
+  padding-bottom: 1rem;
+}
+
+.time {
+  padding-bottom: 1rem;
+}
+
+.map {
+  padding-bottom: 4rem;
+}
+
+
+@media screen and (max-width: 767px) {
+  .access-adress {
+    text-align: center;
+    margin: 2px 2em;
+    padding: 1rem;
+    background-color: rgb(242, 234, 234);
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  .map {
+    padding-bottom: 1rem;
+  }
+  .home-image {
+    object-fit: cover;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
   @media screen and (max-width: 767px) {
     .access-flex {
       display: block;
@@ -183,6 +405,82 @@ Updated: 2024-02-13 17:32:40
   width: 80%;
   margin: 3% auto 0;
 }
+
+/********* メニュー表 *********/
+.menu_display {
+  font-family: 'NotoSerifJP-ExtraLight';
+  height: 100%;
+  width: 100%;
+
+}
+
+.under_line {
+  border-top: 1px solid rgba(12, 11, 11, 0.3);
+  border-width: 1.5px;
+  width: 85%;
+  margin: 0 auto 0;
+  padding: 2% 0 1% 0;
+}
+
+.menu_display_main__title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(227, 202, 58);
+}
+
+.menu_display_title {
+  padding: 2rem 0 0.4rem 10%;
+  font-size: 23px;
+  color: rgb(193, 166, 18);
+  font-weight: bolder;
+}
+
+.menu_display__sub_title {
+  padding-left: 4%;
+  font-size: 18px;
+}
+
+.menu_display_sub_title {
+  display: flex;
+  justify-content: space-around;
+  line-height: 2em;
+  font-size: 1.2em;
+}
+
+.menu_display_title_price {
+  text-align: center;
+  font-size: 100%;
+}
+
+.background {
+  width: 100vw;
+  height: 100%;
+  background-image: image-url('background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+}
+
+/******* レスポンシブ *******/
+@media screen and (max-width: 767px) {
+  .menu_display_main__title {
+    font-size: 2.5rem;
+  }
+  .menu_display_title {
+    font-size: 1.1rem;
+  }
+  .menu_display__sub_title {
+    font-size: 1rem;
+  }
+  .menu_display_sub_title {
+    font-size: 0.8rem;
+    line-height: 1em;
+  }
+}
+
 
 /****single.php*****/
 .main.single{
@@ -340,4 +638,55 @@ Updated: 2024-02-13 17:32:40
       padding:0;
       font-size:0;
     }
+}
+
+/***********   リセットCSS   **************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
