@@ -66,7 +66,7 @@ $(function(){
   </div>
 
 <!-- 投稿ループ -->
-  <div class="line"></div>
+  <div class="posts_line_top"></div>
     <div class="index_post">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -74,7 +74,9 @@ $(function(){
 
       <?php endwhile; endif; ?>
     </div>
-  <div class="line"></div>
+    <?php my_paging_nav(); ?>
+      
+  <div class="posts_line_under"></div>
  
 <!-- アクセス情報を表示 -->
     <div class="access">

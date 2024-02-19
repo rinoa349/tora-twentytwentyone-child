@@ -43,3 +43,40 @@ add_action('wp_enqueue_scripts', function () {
 
 //アイキャッチ画像を有効化
 add_theme_support('post-thumbnails');
+
+//ページネーション
+function my_paging_nav() {
+  //グローバル変数を宣言
+  global $wp_query , $wp_rewrite; 
+
+  // ページ数が2より小さかったらページネーションを表示しない
+  if ( $wp_query->max_num_pages < 2 ) {
+      return;
+  }
+  // ページがあればページ数を取得、なければ1を入れる
+  $paged        = get_query_var( 'paged' ) ? intval( get_query_var( 'paged' ) ) : 1;
+  // パーマリンクの設定をしていたら、それに従い表示する。デフォルトなら「?paged=%#%」で表示する
+  $format  = $wp_rewrite->using_permalinks() ? user_trailingslashit( $wp_rewrite->pagination_base . '/%#%', 'paged' ) : '?paged=%#%';
+
+  //ページネーションの設定
+  $links = paginate_links( array(
+      'base'     => get_pagenum_link() . '%_%', //URLのベース
+      'format'   => $format, //ページネーションのリンクの構造
+      'total'    => $wp_query->max_num_pages, //ページ数（全ページを指定）
+      'current'  => $paged, //現在のページの位置
+      'mid_size' => 1, //現在のページの両側に表示する数
+      'prev_text' => '前へ',
+      'next_text' => '次へ',
+  ) );
+
+  if ( $links ) :
+
+  ?>
+  <!-- 表示されるHTML -->
+  <nav role="navigation">
+      <ul class="page-numbers">
+          <li><?php echo $links; ?></li>
+      </ul>
+  </nav>
+  <?php endif; 
+}
