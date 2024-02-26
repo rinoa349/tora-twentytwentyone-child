@@ -21,13 +21,13 @@ get_header(); ?>
 
 
 <div class="menu">
-  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/este.jpeg"/>
+  <img class="este_menu_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este.jpeg"/>
   <div class="este-top-title">HEALTH & BEAUTY</div>
 
 
   <div class="top-menu">
     <div class="top-menu-comment">
-      オイルトリートメントに精油を合わせることで、日々の心身のバランスの乱れを整えます。<br>
+      昨今オイルトリートメントに精油を合わせることで、日々の心身のバランスの乱れを整えます。<br>
       静かな森の中、木漏れ日を浴びるような心地へ誘いながら、<br>
       自己治癒力を高め、内面にある健やかさと美しさを取り戻すお手伝いをさせていただきます。<br>
       大切なお身体を、日頃からトリートメントでメンテナンスすることによって不調を防ぎ、<br>
@@ -39,40 +39,37 @@ get_header(); ?>
     
     <div class="kairo_menu">
       <div class="kairo_container">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu1.jpeg"/>
-        <div class="kairo_menu_title">【　美骨カイロコース　】<br>
+        <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu1.jpeg"/>
+        <div class="kairo_menu_title"><p class="kairo_menu_name">【　美骨カイロコース　】</p>
           骨盤・全身調整
           <span class="kairo_sub_title">（＊ 初回(プラス30分)カウンセリングと検査が含まれます。）</span><br><br>
-          肩こりや腰痛・膝痛・しびれ・神経痛の緩和、背骨や骨盤の歪みを整えて<br>
-          自律神経の働きを良くしていきます。
+          <p class="kairo_menu_comment">肩こりや腰痛・膝痛・しびれ・神経痛の緩和、背骨や骨盤の歪みを整えて自律神経の働きを良くしていきます。</p>
         </div>
       </div>
 
       <div class="kairo_container">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu2.jpeg"/>
-        <div class="kairo_menu_title">【　エステコース　】<br><br>
-          オイルを使った足、背中、お腹、腕、デコルテの全身オールハンドトリートメントに加え<br>
-          気になる部位に集中的にアプローチ。
+        <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu2.jpeg"/>
+        <div class="kairo_menu_title"><p class="kairo_menu_name">【　エステコース　】</p><br>
+          <p class="kairo_menu_comment">オイルを使った足、背中、お腹、腕、デコルテの全身オールハンドトリートメントに加え気になる部位に集中的にアプローチ。</p>
         </div>
       </div>
       
       <div class="kairo_container">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu3.jpeg"/>
-        <div class="kairo_menu_title">【　オプションコース（トリートメント）　】<br><br>
-          お好みの“時間とメニュー”の組み合わせが楽しめる、当サロンの一番人気のコースです。
+        <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu3.jpeg"/>
+        <div class="kairo_menu_title"><p class="kairo_menu_name">【　オプションコース（トリートメント）　】</p><br>
+        <p class="kairo_menu_comment">お好みの“時間とメニュー”の組み合わせが楽しめる、当サロンの一番人気のコースです。</p>
         </div>
       </div>
 
       <div class="kairo_container">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu4.jpeg"/>
-      <div class="kairo_menu_title">【　美肌フェイシャル　】<br><br>
-          丁寧なクレンジング・洗顔の後、フェイシャルマッサージで血行を良くし、<br>
-          くすみやむくみを解消します。
+        <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu4.jpeg"/>
+      <div class="kairo_menu_title"><p class="kairo_menu_name">【　美肌フェイシャル　】</p><br>
+      <p class="kairo_menu_comment">丁寧なクレンジング・洗顔の後、フェイシャルマッサージで血行を良くし、くすみやむくみを解消します。</p>
         </div>
+      </div> 
       </div>
 
       <div class="menu-link">
-        <!--  ↓リンクを貼る↓  -->
         <a href="<?php echo home_url('/menu-list/'); ?>">詳しくメニューを見る</a>
       </div><br><br>
   </div>

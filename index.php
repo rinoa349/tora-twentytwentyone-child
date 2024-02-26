@@ -93,7 +93,7 @@ $(function(){
           <div class="access-information">
             <div class="access-comment">
               <div class="name">【　HEALTH & BEAUTY  TORa　】</div>
-              <div class="adress">〒381-2223 長野県長野市里島27-2<br> タウンコートいずみ B102号室</div>
+              <div class="adress">〒381-2223 長野県長野市里島27-2<br>   タウンコートいずみ B102号室</div>
               <div class="phone-number">TEL 090-3408-3514</div>
               <div class="time">営業時間 10：00 〜 17：00 </div>
               完全予約制
