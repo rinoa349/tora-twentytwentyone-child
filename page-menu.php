@@ -20,12 +20,10 @@
 get_header(); ?>
 
 
-<div class="menu">
-  <img class="este_menu_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este.jpeg"/>
+<div class="menu"> 
   <div class="este-top-title">HEALTH & BEAUTY</div>
+  <img class="este_menu_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este.jpeg"/>
 
-
-  <div class="top-menu">
     <div class="top-menu-comment">
       昨今オイルトリートメントに精油を合わせることで、日々の心身のバランスの乱れを整えます。<br>
       静かな森の中、木漏れ日を浴びるような心地へ誘いながら、<br>
@@ -33,7 +31,6 @@ get_header(); ?>
       大切なお身体を、日頃からトリートメントでメンテナンスすることによって不調を防ぎ、<br>
       いきいきとした素肌を保ち、軽やかな心身でお過ごしいただきたいと願っております。<br>
     </div>
-  </div>
 
   <div class="middle-menu">
     
