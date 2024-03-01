@@ -80,23 +80,23 @@ $(function(){
   <div class="posts_line_under"></div>
  
 <!-- アクセス情報を表示 -->
-    <div class="access">
-        <div class="title">
-          <div class="title-up">information / access</div>
-          <div class="title-middle">-</div>
-          <div class="title-down">【 サロン案内／アクセス 】</div>
+    <div class="index-access">
+        <div class="index-title">
+          <div class="index-title-up">information / access</div>
+          <div class="index-title-middle">-</div>
+          <div class="index-title-down">【 サロン案内／アクセス 】</div>
         </div>
-      <div class="access-top">
-        <div class="access-flex">
-          <div class="access-image">
-					<img  class="home" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room.jpg"/>
+      <div class="index-access-top">
+        <div class="index-access-flex">
+          <div class="index-access-image">
+					<img  class="index-home" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room.jpg"/>
           </div>
-          <div class="access-information">
-            <div class="access-comment">
-              <div class="name">【　HEALTH & BEAUTY  TORa　】</div>
-              <div class="adress">〒381-2223 長野県長野市里島27-2<br>   タウンコートいずみ B102号室</div>
-              <div class="phone-number">TEL 090-3408-3514</div>
-              <div class="time">営業時間 10：00 〜 17：00 </div>
+          <div class="index-access-information">
+            <div class="index-access-comment">
+              <div class="index-name">【　HEALTH & BEAUTY  TORa　】</div>
+              <div class="index-adress">〒381-2223 長野県長野市里島27-2<br>   タウンコートいずみ B102号室</div>
+              <div class="index-phone-number">TEL 090-3408-3514</div>
+              <div class="index-time">営業時間 10：00 〜 17：00 </div>
               完全予約制
             </div>
           </div>

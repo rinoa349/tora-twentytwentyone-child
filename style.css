@@ -287,70 +287,64 @@ Updated: 2024-02-13 17:32:40
   text-align: center;
 }
 
-/*********アクセス情報*********/
-
-.access-top {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.home {
-  width: 100%;
-  height: 20rem;
-}
-
-.access-comment {
-  text-align: center;
-}
-
-.access-flex {
-  display: flex;
-}
-
-.access-image {
-  width: 55%;
-  margin: auto;
-}
-
-.access-information {
-  width: 45%;
-  margin: auto .5rem;
-}
-.name {
-  padding: 1rem 0 1rem 0;
-}
-
-.adress {
-  padding-bottom: 1rem;
-}
-.phone-number {
-  padding-bottom: 1rem;
-}
-
-.time {
-  padding-bottom: 1rem;
-}
-
-.title {
+/*************************** アクセス情報 ***************************/
+.index-title {
   text-align: center;
   padding: 1rem;
   opacity: 0.6;
 }
 
-.title-up {
+.index-title-up {
   font-size: 16px;
 }
 
-.title-down {
+.index-title-down {
   font-size: 16px;
 }
 
-.title-middle {
+.index-title-middle {
   padding: 1rem;
 }
 
-.access-adress {
+.index-access-top {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.index-home {
+  width: 100%;
+  height: 20rem;
+}
+
+.index-access-comment {
+  text-align: center;
+}
+
+.index-access-flex {
+  display: flex;
+}
+
+.index-access-information {
+  width: 45%;
+  margin: auto .5rem;
+}
+.index-name {
+  padding: 1rem 0 1rem 0;
+}
+
+.index-adress {
+  padding-bottom: 1rem;
+}
+.index-phone-number {
+  padding-bottom: 1rem;
+}
+
+.index-time {
+  padding-bottom: 1rem;
+}
+
+.index-access-adress {
   text-align: center;
   margin: 5em 20em;
   padding: 2.5em;
@@ -359,38 +353,38 @@ Updated: 2024-02-13 17:32:40
   font-size: 16px;
 }
 
-.home {
+.index-home {
   height: 30em;
 }
 
-.home-image {
+.index-home-image {
   object-fit: cover;
   width: 70%;
   margin: 0 auto;
 }
 
-.name {
+.index-name {
   padding: 1rem 0 1rem 0;
 }
 
-.adress {
+.index-adress {
   padding-bottom: 1rem;
 }
-.phone-number {
-  padding-bottom: 1rem;
-}
-
-.time {
+.index-phone-number {
   padding-bottom: 1rem;
 }
 
-.map {
+.index-time {
+  padding-bottom: 1rem;
+}
+
+.index-map {
   padding-bottom: 4rem;
 }
 
 
 @media screen and (max-width: 767px) {
-  .access-adress {
+  .index-access-adress {
     text-align: center;
     margin: 2px 2em;
     padding: 1rem;
@@ -398,10 +392,10 @@ Updated: 2024-02-13 17:32:40
     border-radius: 20px;
     font-size: 16px;
   }
-  .map {
+  .index-map {
     padding-bottom: 1rem;
   }
-  .home-image {
+  .index-home-image {
     object-fit: cover;
     width: 100%;
     margin: 0 auto;
@@ -409,14 +403,14 @@ Updated: 2024-02-13 17:32:40
 }
 
   @media screen and (max-width: 767px) {
-    .access-flex {
+    .index-access-flex {
       display: block;
     }
-    .access-flex .access-image {
+    .index-access-flex .index-access-image {
       width: 100%;
       margin: 0 auto;
     }
-    .access-flex .access-information {
+    .index-access-flex .index-access-information {
       width: 100%;
       margin: 0 auto;
     }
