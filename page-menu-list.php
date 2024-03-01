@@ -25,6 +25,7 @@ get_header(); ?>
       <div class="menu_display_main__title">
         Menu
       </div>
+      <div class="test-menu">テストテストテスト</div>
       <div class="menu_display_title">美骨カイロコース</div>
       <div class="under_line"></div>
         <div class="menu_display_sub_title">骨盤・美姿勢・全身矯正（60分）

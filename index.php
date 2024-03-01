@@ -59,6 +59,7 @@ $(function(){
       <img  class="este1-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este1-image.jpeg"/>
         <p class="menu_title_middle">TORa オリジナルメニューをはじめ、エンビロン、セルコスメのメニューをご用意。<br>
         人の体がそれぞれ違うように、肌ケアも十人十色。<br>カウンセリングを元に最適なケアをご提案いたします。</p>
+        <div class="test-menu">テストテストテスト</div>
       <div class="menu-link">
         <a href="<?php echo home_url('/menu/'); ?>">全てのメニューを見る</a>
       </div>

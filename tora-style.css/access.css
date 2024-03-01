@@ -1,6 +1,48 @@
-.access {
-  background-color: #fff6e5;
-  font-family: 'NotoSerifJP-ExtraLight';
+.test-menu {
+  color: blue;
+}
+
+.access-top {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.home {
+  width: 100%;
+  height: 20rem;
+}
+
+.access-comment {
+  text-align: center;
+}
+
+.access-flex {
+  display: flex;
+}
+
+.access-image {
+  width: 55%;
+  margin: auto;
+}
+
+.access-information {
+  width: 45%;
+  margin: auto .5rem;
+}
+.name {
+  padding: 1rem 0 1rem 0;
+}
+
+.adress {
+  padding-bottom: 1rem;
+}
+.phone-number {
+  padding-bottom: 1rem;
+}
+
+.time {
+  padding-bottom: 1rem;
 }
 
 .title {
@@ -31,7 +73,6 @@
 }
 
 .home {
-  width: 80%;
   height: 30em;
 }
 
@@ -79,3 +120,17 @@
     margin: 0 auto;
   }
 }
+
+  @media screen and (max-width: 767px) {
+    .access-flex {
+      display: block;
+    }
+    .access-flex .access-image {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .access-flex .access-information {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }

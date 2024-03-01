@@ -26,39 +26,54 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
 
-//CSSの読み込み
-add_action('wp_enqueue_scripts', function () {
+
+
+/////////////////// CSSの読み込み //////////////////////////////////////
+
+  add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('my_style', get_stylesheet_directory_uri() . '/style.css');
   }, 11);
 
+
+/////////////////// 外部CSSの読み込み ///////////////////////////////////
   
-  add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('access_style', get_template_directory_uri() . 'tora-style.css/access.css');
-  }, 10);
+  function my_styles() {
+    if ( is_page( 'menu' ) ) {
+        wp_enqueue_style( 'menu', get_stylesheet_directory_uri() . '/tora-style.css/menu.css', array(), '1.0.0' );
+    } elseif ( is_page( 'access' ) ) {
+      wp_enqueue_style( 'access', get_stylesheet_directory_uri() . '/tora-style.css/access.css', array(), '1.0.0' );
+    } elseif ( is_page( 'menu-list' ) ) {
+      wp_enqueue_style( 'menu-list', get_stylesheet_directory_uri() . '/tora-style.css/menu-list.css', array(), '1.0.0' ); 
+    }
+  }
+add_action( 'wp_enqueue_scripts', 'my_styles' );
+
+
+/////////////////// JavaScriptの読み込み ////////////////////////////////
   
-//JavaScriptの読み込み
   add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('top_page', get_stylesheet_directory_uri() . '/top-page.js', [], false, true);
   });
 
-//アイキャッチ画像を有効化
+/////////////////// アイキャッチ画像を有効化 ///////////////////////////////
+
 add_theme_support('post-thumbnails');
 
 //ページネーション
 function my_paging_nav() {
-  //グローバル変数を宣言
+//グローバル変数を宣言
   global $wp_query , $wp_rewrite; 
 
-  // ページ数が2より小さかったらページネーションを表示しない
+// ページ数が2より小さかったらページネーションを表示しない
   if ( $wp_query->max_num_pages < 2 ) {
       return;
   }
-  // ページがあればページ数を取得、なければ1を入れる
+// ページがあればページ数を取得、なければ1を入れる
   $paged        = get_query_var( 'paged' ) ? intval( get_query_var( 'paged' ) ) : 1;
-  // パーマリンクの設定をしていたら、それに従い表示する。デフォルトなら「?paged=%#%」で表示する
+// パーマリンクの設定をしていたら、それに従い表示する。デフォルトなら「?paged=%#%」で表示する
   $format  = $wp_rewrite->using_permalinks() ? user_trailingslashit( $wp_rewrite->pagination_base . '/%#%', 'paged' ) : '?paged=%#%';
 
-  //ページネーションの設定
+//ページネーションの設定
   $links = paginate_links( array(
       'base'     => get_pagenum_link() . '%_%', //URLのベース
       'format'   => $format, //ページネーションのリンクの構造
@@ -72,7 +87,7 @@ function my_paging_nav() {
   if ( $links ) :
 
   ?>
-  <!-- 表示されるHTML -->
+<!-- 表示されるHTML -->
   <nav role="navigation">
       <ul class="page-numbers">
           <li><?php echo $links; ?></li>

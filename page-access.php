@@ -25,6 +25,7 @@ get_header(); ?>
     <div class="title-middle">-</div>
     <div class="title-down">サロン案内／アクセス</div>
   </div>
+  <div class="test-menu">テストテストテスト</div>
 
   <div class="home-image">
   <img class="home" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room6.jpg"/>

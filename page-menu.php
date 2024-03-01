@@ -31,7 +31,7 @@ get_header(); ?>
       大切なお身体を、日頃からトリートメントでメンテナンスすることによって不調を防ぎ、<br>
       いきいきとした素肌を保ち、軽やかな心身でお過ごしいただきたいと願っております。<br>
     </div>
-
+<div class="test-menu">テストテストテスト</div>
   <div class="middle-menu">
     
     <div class="kairo_menu">
