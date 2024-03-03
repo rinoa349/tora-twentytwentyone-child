@@ -25,6 +25,8 @@ get_header(); ?>
 <?php endif; ?>
 
 <body>
+
+<!---------------------------- 画像スライダー ---------------------------->
 <div id="photo">
   <img  class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room5.jpg"/>
   <img  class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room1.jpg"/>
@@ -47,8 +49,8 @@ $(function(){
 });
 </script>
 
-<!-- メニュー画面を表示 -->
-  <div class='contents'>
+<!---------------------------- メニュー画面 ---------------------------->
+
     <div class="menu-content">
         <div class="line"></div>
       <div class="title">
@@ -64,49 +66,48 @@ $(function(){
         <a href="<?php echo home_url('/menu/'); ?>">全てのメニューを見る</a>
       </div>
     </div>
-  </div>
+    
+  
+<!---------------------------- 投稿ループ ------------------------------>
 
-<!-- 投稿ループ -->
-  <div class="posts_line_top"></div>
+  <div class="post-container">
+    <div class="section_title">NEWS</div>
     <div class="index_post">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <p><?php the_date(); ?>　▪️<a href="<?php the_permalink();?>"><?php the_title();?></a></p><br>
+        <p class="index_post_title"><?php the_date(); ?>　　　<a  href="<?php the_permalink();?>"><?php the_title();?></a></p><br>
 
       <?php endwhile; endif; ?>
+    
+      <?php my_paging_nav(); ?>
     </div>
-    <?php my_paging_nav(); ?>
-      
-  <div class="posts_line_under"></div>
+  </div>
+  
+
  
-<!-- アクセス情報を表示 -->
-    <div class="index-access">
-        <div class="index-title">
-          <div class="index-title-up">information / access</div>
-          <div class="index-title-middle">-</div>
-          <div class="index-title-down">【 サロン案内／アクセス 】</div>
-        </div>
-      <div class="index-access-top">
-        <div class="index-access-flex">
+
+<!---------------------------- アクセス情報 ---------------------------->
+
+    <div class="access-container">
+      <div class="section_title">information/access</div>
           <div class="index-access-image">
-					<img  class="index-home" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room.jpg"/>
-          </div>
-          <div class="index-access-information">
+					  <img  class="index-home" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room.jpg"/>    
+          
             <div class="index-access-comment">
-              <div class="index-name">【　HEALTH & BEAUTY  TORa　】</div>
-              <div class="index-adress">〒381-2223 長野県長野市里島27-2<br>   タウンコートいずみ B102号室</div>
-              <div class="index-phone-number">TEL 090-3408-3514</div>
-              <div class="index-time">営業時間 10：00 〜 17：00 </div>
-              完全予約制
+              <p>【　HEALTH & BEAUTY  TORa　】</p>
+              <p>〒381-2223 長野県長野市里島27-2<br>  タウンコートいずみ B102号室</p>
+              <p>TEL 090-3408-3514</p>
+              <p>営業時間 10：00 〜 17：00 </p>
+              <p>完全予約制</p>
             </div>
+
           </div>
-        </div>
       </div>
+    </div>
       <div class="menu-link">
         <a href="<?php echo home_url('access'); ?>">案内情報を見る</a>
       </div>
-    </div>
-  </div>
+
   <div class="line"></div>
 
 </div>

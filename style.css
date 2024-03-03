@@ -53,25 +53,27 @@ Updated: 2024-02-13 17:32:40
 
 .title {
   text-align: center;
+  padding: 1.5rem 0;
 }
 
+.menu-link {
+  text-align: center;
+  padding: 30px;
+  margin-top: 3%;
+  opacity: 0.7;
+}
+
+.line {
+  border-top: 1px solid rgba(151, 149, 149, 0.2);
+  border-width: medium;
+  width: 80%;
+  margin: 3% auto 0;
+}
 
 /*********************** エステメニュー ***********************/
 
 .menu-content {
   padding-top: 1%;
-}
-.title_menu {
-  height: 21.47px;
-  width: 40px;
-  display: block;
-  margin: 0 auto;
-  padding: 35px 0 10px 0;
-}
-
-.menu_title {
-  text-align: center;
-  font-size: 18px;
 }
 
 .menu_title_top {
@@ -87,88 +89,89 @@ Updated: 2024-02-13 17:32:40
   border-radius: 80px;
 }
 
-.este_menu_image {
-  margin: auto;
-  display: block;
-  width: 88%;
-  height: 25em;
-  border-radius: 30px;
-}
-
 .menu_title_middle {
   font-size: 16px;
   text-align: center;
   line-height: 1.8em;
 }
 
-.menu-link {
-  text-align: center;
-  padding: 30px;
-  margin-top: 3%;
-  opacity: 0.7;
+/**************************** 投稿欄 ****************************/
+
+.post-container {
+  padding: 50px 0;
+  margin: 10px 0;
+  background-color: #F8F6F4;
 }
 
-.menu_link {
-  border: #000 1px solid;
+.section_title {
+  font-family: sans-serif;
+  font-size: 200%;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+a {
   text-decoration: none;
-  padding: 2%;
-  font-size: 0.8rem;
 }
-
-.menu {
-  background-color: #fff6e5;
-  font-family: 'NotoSerifJP-ExtraLight';
-  padding-top: 4rem;
-  width: auto;
-  height: auto;
-}
-
-.este-top-title {
-  font-size: 32px;
-  opacity: 0.8;
-  color: white;
-}
-
-.top-menu-comment {
-  line-height: 1.6em;
-  font-size: 18px;
-  opacity: 0.5;
-  text-align: center;
-  padding-top: 2em;
-}
-
-.middle-menu {
-  background-color: #fff6e5;
-  font-family: 'NotoSerifJP-ExtraLight';
-}
-
-/******* カイロメニュー *******/
-.kairo_menu {
-  
-}
-.kairo_container {
-  display: flex;
-  margin: 3em 5em;
-  padding: 1em;
-  background-color: rgb(242, 234, 234);
-  border-radius: 20px;
-}
-
-.kairo_image {
-  border-radius: 20px;
-  width: 30%;
-  height: 12rem;
-}
-
-.kairo_menu_title {
-  padding: 1em 0 0 1.5em;
-  line-height: 1.8em;
-  opacity: 0.5;
+.index_post {
   font-size: 16px;
+  text-align: left;
+  padding-left: 10rem;
 }
 
-.kairo_menu_comment {
+.index_post_title {
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: dotted 1px #C5C3C2;
+  margin-right: 10rem;
+}
 
+.posts_line_top {
+  padding: 10px 0;
+  margin: 10px 0;
+  border-top: 1px solid rgba(82, 122, 187, 0.2);
+  border-width: medium;
+  width: 100%;
+  margin: 3% auto 0;
+}
+
+.posts_line_under {
+  border-top: 1px solid rgba(82, 122, 187, 0.2);
+  border-width: medium;
+  width: 100%;
+  margin: 5% auto 0;
+}
+
+.page-numbers {
+  font-size: 16px;
+  padding: 10px 0px 10px 10px;
+  text-align: center;
+}
+
+/*---------------------------- アクセス情報 ----------------------------*/
+.access-container {
+  padding-top: 50px;
+}
+
+.index-access-comment {
+  text-align: center;
+  margin-left: 5px;
+  font-size: 18px;
+  line-height: 1.7em;
+  padding-top: 4rem;
+  font-weight: 580;
+}
+
+.index-home {
+  width: 50%;
+  height: 25rem;
+  float: left;
+}
+
+.index-access-image {
+  
 }
 
 /*********************** エステメニュー・スマホ表示時 ***********************/
@@ -178,13 +181,7 @@ Updated: 2024-02-13 17:32:40
 @media screen and (min-width:1024px) {}
 
 @media screen and (max-width: 767px) {
-  .menu {
-    background-color: #fff6e5;
-    font-family: 'NotoSerifJP-ExtraLight';
-    padding-top: 0.1rem;
-    width: auto;
-    height: auto;
-  }
+  
 
   .este_menu_image {
     margin: auto;
@@ -212,50 +209,6 @@ Updated: 2024-02-13 17:32:40
     font-size: 16px;
     opacity: 0.8;
   }
-
-
-  .kairo_container {
-    display: flex;
-    margin: 6px 6px;
-    padding: 7px;
-    background-color: rgb(242, 234, 234);
-    border-radius: 20px;
-    width: auto;
-    height: auto;
-  }
-  
-  .kairo_image {
-    border-radius: 20px;
-    margin: 0 15px 15px 0;
-    width: 30%;
-    height: 60%;
-    float: left;
-  }
-
-  .kairo_menu_name {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-  
-  .kairo_menu_title {
-    padding: 3px 0 0 5px;
-    margin: 0 15px 15px 0;
-    line-height: 1.6em;
-    opacity: 0.8;
-    font-size: 18px;
-  }
-
-  .kairo_sub_title {
-    font-size: 14px;
-    line-height: 1.5em;
-  }
-
-  .kairo_menu_comment {
-    font-size: 16px;
-    line-height: 1.6em;
-  }
-}
 
 /********* 投稿 *********/
 .index_post {
@@ -381,7 +334,7 @@ Updated: 2024-02-13 17:32:40
 .index-map {
   padding-bottom: 4rem;
 }
-
+}
 
 @media screen and (max-width: 767px) {
   .index-access-adress {
