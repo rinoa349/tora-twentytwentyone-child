@@ -11,6 +11,11 @@ Updated: 2024-02-13 17:32:40
 
 */
 
+#test-menu {
+  text-align: center;
+  font-size: 50px;
+}
+
 .site-main {
   padding-top: 5px;
 }
@@ -70,10 +75,19 @@ Updated: 2024-02-13 17:32:40
   margin: 3% auto 0;
 }
 
+.section_title {
+  font-family: sans-serif;
+  font-size: 200%;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 50px;
+  letter-spacing: 2px;
+}
+
 /*********************** エステメニュー ***********************/
 
-.menu-content {
-  padding-top: 1%;
+.menu-container {
+  padding-top: 50px;
 }
 
 .menu_title_top {
@@ -101,15 +115,6 @@ Updated: 2024-02-13 17:32:40
   padding: 50px 0;
   margin: 10px 0;
   background-color: #F8F6F4;
-}
-
-.section_title {
-  font-family: sans-serif;
-  font-size: 200%;
-  font-weight: 700;
-  text-align: center;
-  padding-bottom: 50px;
-  letter-spacing: 2px;
 }
 
 a {
