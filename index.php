@@ -52,16 +52,14 @@ $(function(){
 <!---------------------------- メニュー画面 ---------------------------->
 <div class="line"></div>
     <div class="menu-container">
-
+      <div class="section_title">MENU</div>
+          <img  class="este1-image fade-in fade-in-up" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este1-image.jpeg"/>
+          <p class="menu_title_middle fade-in fade-in-up">TORa オリジナルメニューをはじめ、エンビロン、セルコスメのメニューをご用意。<br><br>
+          人の体がそれぞれ違うように、肌ケアも十人十色。<br>カウンセリングを元に最適なケアをご提案いたします。</p>
         
+          <div class="menu-link fade-in fade-in-up">
+          <a href="<?php echo home_url('/menu/'); ?>">全てのメニューを見る</a>
         
-        <div class="section_title">MENU</div>
-      <img  class="este1-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este1-image.jpeg"/>
-        <p class="menu_title_middle">TORa オリジナルメニューをはじめ、エンビロン、セルコスメのメニューをご用意。<br>
-        人の体がそれぞれ違うように、肌ケアも十人十色。<br>カウンセリングを元に最適なケアをご提案いたします。</p>
-        
-      <div class="menu-link">
-        <a href="<?php echo home_url('/menu/'); ?>">全てのメニューを見る</a>
       </div>
     </div>
     
@@ -69,39 +67,36 @@ $(function(){
 
   <div class="post-container">
     <div class="section_title">NEWS</div>
-    <div class="index_post">
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <div class="index_post fade-in fade-in-up">
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <p class="index_post_title"><?php the_date(); ?>　　　<a  href="<?php the_permalink();?>"><?php the_title();?></a></p><br>
+            <p class="index_post_title fade-in fade-in-up"><?php the_date(); ?>　　　<a  href="<?php the_permalink();?>"><?php the_title();?></a></p><br>
 
-      <?php endwhile; endif; ?>
-    
-      <?php my_paging_nav(); ?>
-    </div>
+          <?php endwhile; endif; ?>
+        
+          <?php my_paging_nav(); ?>
+        </div>
   </div>
   
 
- 
 
 <!---------------------------- アクセス情報 ---------------------------->
 
     <div class="access-container">
       <div class="section_title">information/access</div>
           <div class="index-access-image">
-					  <img  class="index-home" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room.jpg"/>    
+					  <img  class="index-home fade-in fade-in-up" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room.jpg"/>    
           
-            <div class="index-access-comment">
+            <div class="index-access-comment fade-in fade-in-up">
               <p>【　HEALTH & BEAUTY  TORa　】</p>
               <p>〒381-2223 長野県長野市里島27-2<br>  タウンコートいずみ B102号室</p>
               <p>TEL 090-3408-3514</p>
               <p>営業時間 10：00 〜 17：00 </p>
               <p>完全予約制</p>
             </div>
-
           </div>
-      </div>
     </div>
-      <div class="menu-link">
+      <div class="menu-link fade-in fade-in-up">
         <a href="<?php echo home_url('access'); ?>">案内情報を見る</a>
       </div>
 

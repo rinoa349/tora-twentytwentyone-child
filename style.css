@@ -83,6 +83,22 @@ Updated: 2024-02-13 17:32:40
   padding-bottom: 50px;
   letter-spacing: 2px;
 }
+/*********************** スクロールでフェードイン ***********************/
+
+.fade-in {
+  opacity: 0;
+  transition-duration: 1500ms;
+  transition-property: opacity, transform;
+}
+
+.fade-in-up {
+  transform: translate(0, 100px);
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 
 /*********************** エステメニュー ***********************/
 
@@ -133,22 +149,6 @@ a {
   margin-right: 10rem;
 }
 
-.posts_line_top {
-  padding: 10px 0;
-  margin: 10px 0;
-  border-top: 1px solid rgba(82, 122, 187, 0.2);
-  border-width: medium;
-  width: 100%;
-  margin: 3% auto 0;
-}
-
-.posts_line_under {
-  border-top: 1px solid rgba(82, 122, 187, 0.2);
-  border-width: medium;
-  width: 100%;
-  margin: 5% auto 0;
-}
-
 .page-numbers {
   font-size: 16px;
   padding: 10px 0px 10px 10px;
@@ -187,7 +187,14 @@ a {
 
 @media screen and (max-width: 767px) {
   
-
+  .section_title {
+  font-family: sans-serif;
+  font-size: 150%;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  }
   .este_menu_image {
     margin: auto;
     display: block;
@@ -221,6 +228,7 @@ a {
   line-height: 1.2em;
   text-align: left;
   padding-left: 1.8em;
+  padding-top: 15px;
 }
 
 .posts_line_top {
@@ -482,22 +490,9 @@ a {
       height: 20rem; 
   }
    /********************** メニュー欄のレスポンシブ ************************/
-    .title {
-      text-align: center;
-      padding: 1rem;
-      opacity: 0.6;
-    }
-    .title-up {
-      font-size: 16px;
-    }
-    .title-down {
-      font-size: 16px;
-    }
-    .title-middle {
-      padding: 10px;
-    }
+
     .este1-image {
-      height: 16rem;
+      height: 13rem;
       width: 60%;
       padding: 15px;
       display: block;
