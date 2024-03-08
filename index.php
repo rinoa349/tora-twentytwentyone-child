@@ -58,9 +58,8 @@ $(function(){
           人の体がそれぞれ違うように、肌ケアも十人十色。<br>カウンセリングを元に最適なケアをご提案いたします。</p>
         
           <div class="menu-link fade-in fade-in-up">
-          <a href="<?php echo home_url('/menu/'); ?>">全てのメニューを見る</a>
-        
-      </div>
+            <a href="<?php echo home_url('/menu/'); ?>">全てのメニューを見る</a>  
+          </div>
     </div>
     
 <!---------------------------- 投稿ループ ------------------------------>
