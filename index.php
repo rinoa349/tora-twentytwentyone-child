@@ -51,6 +51,7 @@ $(function(){
 
 <!---------------------------- メニュー画面 ---------------------------->
 <div class="line"></div>
+
     <div class="menu-container">
       <div class="section_title">MENU</div>
           <img  class="este1-image fade-in fade-in-up" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este1-image.jpeg"/>
@@ -69,7 +70,7 @@ $(function(){
         <div class="index_post fade-in fade-in-up">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <p class="index_post_title fade-in fade-in-up"><?php the_date(); ?>　　　<a  href="<?php the_permalink();?>"><?php the_title();?></a></p><br>
+            <p class="index_post_date fade-in fade-in-up"><?php the_date(); ?><a class="index_post_title"  href="<?php the_permalink();?>"><?php the_title();?></a></p><br>
 
           <?php endwhile; endif; ?>
         
@@ -77,8 +78,6 @@ $(function(){
         </div>
   </div>
   
-
-
 <!---------------------------- アクセス情報 ---------------------------->
 
     <div class="access-container">
