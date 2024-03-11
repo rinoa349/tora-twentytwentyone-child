@@ -37,32 +37,40 @@ get_header(); ?>
     <div class="kairo_menu">
       <div class="kairo_container">
         <div class="kairo_menu_title"><p class="kairo_menu_name">【 美骨カイロコース 】</p>
-          骨盤・全身調整
-        <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu1.jpeg"/>
-        
-          <span class="kairo_sub_title">（＊ 初回(プラス30分)カウンセリングと検査が含まれます。）</span><br><br>
-          <p class="kairo_menu_comment">肩こりや腰痛・膝痛・しびれ・神経痛の緩和、背骨や骨盤の歪みを整えて自律神経の働きを良くしていきます。</p>
+         
+          <div class="kairo_contents">
+            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu1.jpeg"/>
+          
+              <p class="kairo_menu_comment">骨盤・全身調整<br><br>（＊ 初回(プラス30分)カウンセリングと検査が含まれます。）<br><br>
+                                            肩こりや腰痛・膝痛・しびれ・神経痛の緩和、背骨や骨盤の歪みを整えて自律神経の働きを良くしていきます。</p>
+          </div>
         </div>
       </div>
 
       <div class="kairo_container">
         <div class="kairo_menu_title"><p class="kairo_menu_name">【 エステコース 】</p><br>
-        <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu2.jpeg"/>
-          <p class="kairo_menu_comment">オイルを使った足、背中、お腹、腕、デコルテの全身オールハンドトリートメントに加え気になる部位に集中的にアプローチ。</p>
+          <div class="kairo_contents">
+            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu2.jpeg"/>
+            <p class="kairo_menu_comment">オイルを使った足、背中、お腹、腕、デコルテの全身オールハンドトリートメントに加え気になる部位に集中的にアプローチ。</p>
+          </div>
         </div>
       </div>
       
       <div class="kairo_container">
         <div class="kairo_menu_title"><p class="kairo_menu_name">【 オプションコース(トリートメント) 】</p><br>
-        <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu3.jpeg"/>
-        <p class="kairo_menu_comment">お好みの“時間とメニュー”の組み合わせが楽しめる、当サロンの一番人気のコースです。</p>
+          <div class="kairo_contents">
+            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu3.jpeg"/>
+            <p class="kairo_menu_comment">お好みの“時間とメニュー”の組み合わせが楽しめる、当サロンの一番人気のコースです。</p>
+          </div>
         </div>
       </div>
 
       <div class="kairo_container">
         <div class="kairo_menu_title"><p class="kairo_menu_name">【 美肌フェイシャル 】</p><br>
-        <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu4.jpeg"/>
-      <p class="kairo_menu_comment">丁寧なクレンジング・洗顔の後、フェイシャルマッサージで血行を良くし、くすみやむくみを解消します。</p>
+          <div class="kairo_contents">
+            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu4.jpeg"/>
+            <p class="kairo_menu_comment">丁寧なクレンジング・洗顔の後、フェイシャルマッサージで血行を良くし、くすみやむくみを解消します。</p>
+          </div>
         </div>
       </div> 
       </div>
