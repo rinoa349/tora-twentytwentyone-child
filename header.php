@@ -28,14 +28,32 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content">
-		<?php
-		/* translators: Hidden accessibility text. */
-		esc_html_e( 'Skip to content', 'twentytwentyone' );
-		?>
-	</a>
 
-	<?php get_template_part( 'template-parts/header/site-header' ); ?>
+
+<!---------------------- ヘッダー ---------------------->
+
+	<div id="header">
+		<div class="headerInner">
+			<p class="headerLogo">HEALTH & BEAUTY TORa</p>
+			<nav>
+				<ul class="navLinks">
+					<li><a href="<?php echo home_url('/menu/'); ?>">施術メニュー</a></li>
+					<li><a href="<?php echo home_url('/menu-list/'); ?>">メニュー表</a></li>
+					<li><a href="<?php echo home_url('/access/'); ?>">アクセス</a></li>
+					<li><a href="<?php echo home_url('/contacts/'); ?>">お問い合わせ</a></li>
+				</ul>
+					<div class="burger">
+						<div class="line1"></div>
+						<div class="line2"></div>
+						<div class="line3"></div>
+					</div>
+					
+			</nav>
+		</div>
+	</div>
+	
+<!-------------------- //ヘッダー ---------------------->
+	<?php/* get_template_part( 'template-parts/header/site-header' ); */?>
 
 	<div id="content" class="site-content">
 		<div id="primary" class="content-area">

@@ -27,6 +27,7 @@ get_header(); ?>
 <body>
 
 <!---------------------------- 画像スライダー ---------------------------->
+
 <div id="photo">
   <img  class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room5.jpg"/>
   <img  class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room1.jpg"/>
