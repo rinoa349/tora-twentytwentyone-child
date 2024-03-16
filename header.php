@@ -22,8 +22,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
-	
-</head> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
@@ -32,9 +32,9 @@
 
 <!---------------------- ヘッダー ---------------------->
 
-	<div id="header">
+<div id="header">
 		<div class="headerInner">
-			<p class="headerLogo">HEALTH & BEAUTY TORa</p>
+			<a class="headerLogo" href="<?php echo esc_url( home_url( '/' ) ); ?>">HEALTH & BEAUTY TORa</a>
 			<nav>
 				<ul class="navLinks">
 					<li><a href="<?php echo home_url('/menu/'); ?>">施術メニュー</a></li>
@@ -46,8 +46,7 @@
 						<div class="line1"></div>
 						<div class="line2"></div>
 						<div class="line3"></div>
-					</div>
-					
+					</div>	
 			</nav>
 		</div>
 	</div>

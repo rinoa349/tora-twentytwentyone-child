@@ -99,8 +99,6 @@ $(function(){
         <a href="<?php echo home_url('access'); ?>">案内情報を見る</a>
       </div>
 
-  <div class="line"></div>
-
 </div>
 
 <?php

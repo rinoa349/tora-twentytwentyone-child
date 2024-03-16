@@ -1,85 +1,27 @@
-.test-menu {
-  color: blue;
-}
-
-.access-top {
+img.home {
+  padding-top: 3rem;
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.home {
-  width: 100%;
-  height: 20rem;
-}
-
-.access-comment {
-  text-align: center;
-}
-
-.access-flex {
-  display: flex;
-}
-
-.access-image {
-  width: 55%;
-  margin: auto;
-}
-
-.access-information {
-  width: 45%;
-  margin: auto .5rem;
-}
-.name {
-  padding: 1rem 0 1rem 0;
-}
-
-.adress {
-  padding-bottom: 1rem;
-}
-.phone-number {
-  padding-bottom: 1rem;
-}
-
-.time {
-  padding-bottom: 1rem;
-}
-
-.title {
-  text-align: center;
-  padding: 1rem;
-  opacity: 0.6;
-}
-
-.title-up {
-  font-size: 16px;
-}
-
-.title-down {
-  font-size: 16px;
-}
-
-.title-middle {
-  padding: 1rem;
-}
-
-.access-adress {
-  text-align: center;
-  margin: 5em 20em;
-  padding: 2.5em;
-  background-color: rgb(242, 234, 234);
-  border-radius: 20px;
-  font-size: 16px;
-}
-
-.home {
   height: 30em;
 }
 
-.home-image {
-  object-fit: cover;
-  width: 70%;
-  margin: 0 auto;
+.access-title {
+  font-size: 30px;
+  text-align: center;
+  padding: 2rem 0 0 0;
+  opacity: 0.8;
+  color: gray;
+  font-weight: 700;
+}
+
+
+.access-adress {
+  text-align: center;
+  margin: 2em 15em;
+  padding: 2.5em;
+  background-color: rgb(242, 234, 234);
+  border-radius: 20px;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .name {
@@ -103,6 +45,22 @@
 
 
 @media screen and (max-width: 767px) {
+
+  img.home {
+    padding-top: 3rem;
+    width: 100%;
+    height: 20em;
+  }
+
+  .access-title {
+    font-size: 20px;
+    text-align: center;
+    padding: 1.5rem 0;
+    opacity: 0.8;
+    color: gray;
+    font-weight: 700;
+  }
+
   .access-adress {
     text-align: center;
     margin: 2px 2em;
@@ -110,27 +68,10 @@
     background-color: rgb(242, 234, 234);
     border-radius: 20px;
     font-size: 16px;
+    letter-spacing: 0;
   }
   .map {
-    padding-bottom: 1rem;
-  }
-  .home-image {
-    object-fit: cover;
-    width: 100%;
-    margin: 0 auto;
+    padding-top: 2.5rem;
+    height: 20em;
   }
 }
-
-  @media screen and (max-width: 767px) {
-    .access-flex {
-      display: block;
-    }
-    .access-flex .access-image {
-      width: 100%;
-      margin: 0 auto;
-    }
-    .access-flex .access-information {
-      width: 100%;
-      margin: 0 auto;
-    }
-  }

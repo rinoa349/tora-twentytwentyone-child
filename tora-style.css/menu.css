@@ -13,13 +13,15 @@
   text-align: center;
   letter-spacing: .3px;
   padding-bottom: 5px;
+  padding-top: 3.5rem;
 }
 
 .este_menu_image {
   margin: auto;
   display: block;
   width: 100%;
-  height: 25em;
+  height: 30em;
+  padding-top: 3rem;
 }
 
 .top-menu-comment {
@@ -103,6 +105,7 @@
   }
 
   .este-top-title {
+    padding-top: 3.5rem;
     font-size: 32px;
     opacity: 0.8;
     color: gray;
@@ -116,7 +119,9 @@
     margin: auto;
     display: block;
     width: 100%;
-    height: 13em;
+    height: 20em;
+    padding-top: 3rem;
+    
   }
   
   .top-menu-comment {

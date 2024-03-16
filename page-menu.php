@@ -21,9 +21,9 @@ get_header(); ?>
 
 
 <div class="menu"> 
-  <div class="este-top-title">HEALTH & BEAUTY</div>
+  
   <img class="este_menu_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este.jpeg"/>
-
+  <div class="este-top-title">HEALTH & BEAUTY</div>
     <div class="top-menu-comment">
       昨今オイルトリートメントに精油を合わせることで、日々の心身のバランスの乱れを整えます。<br>
       静かな森の中、木漏れ日を浴びるような心地へ誘いながら、<br>

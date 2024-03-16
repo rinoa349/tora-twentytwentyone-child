@@ -21,7 +21,8 @@ const fadeIn = function(){
 window.addEventListener('scroll', fadeIn, false);
 
 /////////////////////////////// ヘッダー ///////////////////////////////
-/*
+
+// ヘッダーのスクロール制御
 window.addEventListener('scroll', function(){
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("header").style.height = "40px";
@@ -31,23 +32,11 @@ window.addEventListener('scroll', function(){
     document.getElementById("header").style.background = "rgb(255,255,255,1)";
   }
 });
-*/
-
-// ヘッダーのスクロール制御
-const header = document.getElementById("header");
-window.addEventListener('scroll', function(){
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    header.classList.add('resize');
-  } else {
-    header.classList.remove('resize');
-  }
-});
 
 //スマホでメニュー表示・非表示
 const navMenu = document.querySelector('.navLinks');
-document.querySelector(".burger").addEventListener('click', () => {
+document.querySelector('.burger').addEventListener('click', () => {
 navMenu.classList.toggle('active');
 },);
-
 
 ///////////////////////////////////////////////////////////////////////
