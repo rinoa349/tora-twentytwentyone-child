@@ -34,6 +34,7 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
     wp_enqueue_style('my_style', get_stylesheet_directory_uri() . '/style.css');
   }, 11);
 
+  add_action( 'wp_enqueue_scripts', 'my_styles' );
 
 /////////////////// 外部CSSの読み込み ///////////////////////////////////
   
@@ -44,10 +45,10 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
       wp_enqueue_style( 'access', get_stylesheet_directory_uri() . '/tora-style.css/access.css', array(), '1.0.0' );
     } elseif ( is_page( 'menu-list' ) ) {
       wp_enqueue_style( 'menu-list', get_stylesheet_directory_uri() . '/tora-style.css/menu-list.css', array(), '1.0.0' ); 
+    } elseif ( is_page( 'contacts' ) ) {
+      wp_enqueue_style( 'contacts' , get_stylesheet_directory_uri() . '/tora-style.css/contacts.css', array(), '1.0.0' );
     }
   }
-add_action( 'wp_enqueue_scripts', 'my_styles' );
-
 
 /////////////////// JavaScriptの読み込み ////////////////////////////////
   

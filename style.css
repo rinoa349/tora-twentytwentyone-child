@@ -14,6 +14,9 @@ Updated: 2024-02-13 17:32:40
 
 /***************************** 各パーツ ******************************/
 
+.singular .entry-header {
+  text-decoration: none;
+}
 #header {
   background-color: #FFF;
   padding-bottom: 0;
@@ -116,7 +119,7 @@ display: none;
   justify-content: center;
 }
 .headerInner .headerLogo {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .burger {
   display: flex;
@@ -398,9 +401,7 @@ a {
   float: left;
 }
 
-.index-access-image {
-  
-}
+
 
 /********* スマホ表示(アクセス情報) *********/
 
