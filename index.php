@@ -84,7 +84,7 @@ $(function(){
     <div class="access-container">
       <div class="section_title">information/access</div>
           <div class="index-access-image">
-					  <img  class="index-home fade-in fade-in-up" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room.jpg"/>    
+					  <img  class="index-home fade-in fade-in-up" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room.jpg"/>
           
             <div class="index-access-comment fade-in fade-in-up">
               <p>【　HEALTH & BEAUTY  TORa　】</p>
