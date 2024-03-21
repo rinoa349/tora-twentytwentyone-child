@@ -153,15 +153,61 @@ ul.navLinks.active {
 /*******************************************************/
 
 /***************************** フッター ******************************/
+.footer_container {
+  text-align: center;
+}
+
+.footer_navi_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_navi_flex li {
+  padding: 1rem 3rem 0 3rem;
+}
+
+.footer_navi_flex li a {
+  position: relative;
+}
+
+.footer_navi_flex li a::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #f0db40;
+  bottom: -10px;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.5s;
+}
+
+.footer_navi_flex li a:hover::after {
+  transform: scale(1, 1);
+}
 
 .my_copyright {
   text-align: center;
-  padding-top: 1rem;
+  padding-top: .2rem;
 }
 
 /********* スマホ表示(フッター) *********/
 
 @media screen and (max-width: 767px) {
+  .footer_container {
+    text-align: center;
+  }
+  
+  .footer_navi_flex {
+    display: center;
+  }
+
+  .footer_navi_flex li {
+    padding-right: .3rem;
+    padding-left: .3rem;
+  }
+
   .my_copyright {
     text-align: center;
     padding-top: 1rem;
