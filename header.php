@@ -34,13 +34,13 @@
 
 <div id="header">
 		<div class="headerInner">
-			<a class="headerLogo" href="<?php echo esc_url( home_url( '/' ) ); ?>">HEALTH & BEAUTY TORa</a>
+			<a class="headerLogo" href="<?php echo esc_url( home_url( '/' ) ); ?>">TORa ~health & beauty~</a>
 			<nav>
 				<ul class="navLinks">
 					<li><a href="<?php echo home_url('/menu/'); ?>">施術メニュー</a></li>
-					<li><a href="<?php echo home_url('/menu-list/'); ?>">メニュー表</a></li>
 					<li><a href="<?php echo home_url('/access/'); ?>">アクセス</a></li>
 					<li><a href="<?php echo home_url('/contacts/'); ?>">お問い合わせ</a></li>
+					<li><a href="https://tol-app.jp/s/shgt6zy182gfq2am4m49">ご予約</a></li>
 				</ul>
 					<div class="burger">
 						<div class="line1"></div>

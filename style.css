@@ -253,7 +253,14 @@ img.image {
   text-align: center;
   padding: 30px;
   margin-top: 3%;
-  opacity: 0.7;
+}
+.menu-link a {
+  border: #000 1.2px solid;
+  border-radius: 10px;
+  padding: 1%;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
 }
 
 .line {
@@ -299,12 +306,12 @@ img.image {
   }
 
   .menu-link a {
-    background-color: pink;
+    border: #000 1.2px solid;
+    font-size: 15px;
     display: table;
     margin: 0 auto;
     text-align: center;
-    padding: 15px 20px;
-    opacity: 0.7;
+    padding: 10px;
     border-radius: 10px;
   }
     
@@ -348,7 +355,6 @@ img.image {
 
 .este1-image {
   height: 20rem;
-  width: 45%;
   padding: 40px;
   display: block;
   margin: 0 auto;
@@ -370,8 +376,8 @@ img.image {
 @media screen and (max-width: 767px) {
 
   .este1-image {
-    height: 13rem;
-    width: 60%;
+    height: 9rem;
+    width: 80%;
     padding: 15px;
     display: block;
     margin: 0 auto;
@@ -379,9 +385,10 @@ img.image {
   }
 
   .menu_title_middle {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     line-height: 1.8em;
+    padding: 0 10px;
   }
 }
 
@@ -441,6 +448,9 @@ a {
   .index_post_title {
     padding-left: 15px;
   }
+  a.index_post_title {
+    font-size: 15px;
+  }
 }
 
 /*---------------------------- アクセス情報 ----------------------------*/
@@ -454,6 +464,7 @@ a {
   font-size: 18px;
   line-height: 1.7em;
   padding-top: 4rem;
+  padding-bottom: 2rem;
   font-weight: 580;
 }
 
@@ -473,9 +484,9 @@ a {
     height: 20rem;
     padding-bottom: 20px;
   }
-  
+
   .index-access-comment {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     padding-top: 15px;
   }
@@ -487,6 +498,26 @@ a {
     margin: 3% auto 0;
   }
 }
+
+
+/*---------------------------- お問い合わせ(スマホ表示) ----------------------------*/
+@media screen and (max-width: 767px) {
+  p.label_name {
+    font-size: 16px;
+    padding: 0;
+  }
+  input.my_name {
+    padding: 5px;
+  }
+  .entry-content p {
+    padding-bottom: .5em;
+  }
+  input.send_check {
+    font-size: 15px;
+  }
+}
+/*---------------------------- お問い合わせ ----------------------------*/
+
 
 /*********************** エステメニュー・スマホ表示時 ***********************/
 

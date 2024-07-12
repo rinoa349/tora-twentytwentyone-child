@@ -22,61 +22,111 @@ get_header(); ?>
 
 <div class="menu"> 
   
-  <img class="este_menu_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este.jpeg"/>
+  <img class="este_menu_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo-menu-hero-img.jpg"/>
   <div class="este-top-title">HEALTH & BEAUTY</div>
     <div class="top-menu-comment">
-      昨今オイルトリートメントに精油を合わせることで、日々の心身のバランスの乱れを整えます。<br>
-      静かな森の中、木漏れ日を浴びるような心地へ誘いながら、<br>
-      自己治癒力を高め、内面にある健やかさと美しさを取り戻すお手伝いをさせていただきます。<br>
-      大切なお身体を、日頃からトリートメントでメンテナンスすることによって不調を防ぎ、<br>
-      いきいきとした素肌を保ち、軽やかな心身でお過ごしいただきたいと願っております。<br>
+     カイロプラクティックにより背骨・骨盤のバランスを整えることで、神経・ホルモン・<br>
+     血液・リンパを正常化へと導き、自然治癒力アップへ。また、姿勢美を作りキレイなボディラインを目指せます。<br><br>
+     カイロプラクティックで骨格を整え内側から健康へ、さらに美容カイロエステはクレイセラピーで皮膚の健康美を。<br>
     </div>
 
   <div class="middle-menu">
     
     <div class="kairo_menu">
+
       <div class="kairo_container">
-        <div class="kairo_menu_title"><p class="kairo_menu_name">【 美骨カイロコース 】</p>
-         
+        <div class="kairo_menu_title"><p class="kairo_menu_name">【 ご新規様限定　骨盤・歪み調整コース　（¥2000引き） 】</p><br>
           <div class="kairo_contents">
-            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu1.jpeg"/>
-          
-              <p class="kairo_menu_comment">骨盤・全身調整<br><br>（＊ 初回(プラス30分)カウンセリングと検査が含まれます。）<br><br>
-                                            肩こりや腰痛・膝痛・しびれ・神経痛の緩和、背骨や骨盤の歪みを整えて自律神経の働きを良くしていきます。</p>
+            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo-img8.jpg"/>
+            <p class="kairo_menu_comment">初回お試し割引実施しています。<br>
+            通常¥6600 → ¥4400<br>
+            初めての施術ではカウンセリングと検査時間をいただきますので、お時間を通常より多めにいただいております。<br><br>
+            <span class="menu_fee">〈 所要時間（目安） 約90分 ・・・ 4,400円 〉</span>
+            </p>
           </div>
         </div>
       </div>
 
       <div class="kairo_container">
-        <div class="kairo_menu_title"><p class="kairo_menu_name">【 エステコース 】</p><br>
+        <div class="kairo_menu_title"><p class="kairo_menu_name">【 美骨カイロコース（骨盤調整・全身調整） 】</p><br>
           <div class="kairo_contents">
-            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu2.jpeg"/>
-            <p class="kairo_menu_comment">オイルを使った足、背中、お腹、腕、デコルテの全身オールハンドトリートメントに加え気になる部位に集中的にアプローチ。</p>
+            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo-img5.jpg"/>  
+              <p class="kairo_menu_comment">骨盤・全身調整<br><br>
+                                            肩こり、腰痛、ストレートネック、美姿勢、慢性的な身体の不調に。<br><br>
+                                            <span class="menu_fee">〈 所要時間（目安） 約60分 ・・・ 6,600円 〉</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="kairo_container">
+        <div class="kairo_menu_title"><p class="kairo_menu_name">【 脂肪・セルライト撃退コース（上半身集中） 】</p><br>
+          <div class="kairo_contents">
+            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo-img2.jpg"/>
+            <p class="kairo_menu_comment">遠赤外線・ゲルマニウムヒートマット（20分）<br>
+            協力マッサージ（バーニングセル使用）<br>
+            二の腕、背中、ウエスト、腰周り、お腹、超音波トリートメントorEMSマシーン。<br><br>
+            <span class="menu_fee">〈 所要時間（目安） 約60分 ・・・ 9,900円 〉</span>
+            </p>
           </div>
         </div>
       </div>
       
       <div class="kairo_container">
-        <div class="kairo_menu_title"><p class="kairo_menu_name">【 オプションコース(トリートメント) 】</p><br>
+        <div class="kairo_menu_title"><p class="kairo_menu_name">【 脂肪・セルライト撃退コース（下半身集中） 】</p><br>
           <div class="kairo_contents">
-            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu3.jpeg"/>
-            <p class="kairo_menu_comment">お好みの“時間とメニュー”の組み合わせが楽しめる、当サロンの一番人気のコースです。</p>
+            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo-img9.jpeg"/>
+            <p class="kairo_menu_comment">遠赤外線・ゲルマニウムヒートマット（20分）<br>
+            協力マッサージ（バーニングセル使用）<br>
+            お尻、太もも、膝肉、ふくらはぎ、足首、超音波トリートメントorEMSマシーン。<br><br>
+            <span class="menu_fee">〈 所要時間（目安） 約60分 ・・・ 9,900円 〉</span></p>
           </div>
         </div>
       </div>
 
       <div class="kairo_container">
-        <div class="kairo_menu_title"><p class="kairo_menu_name">【 美肌フェイシャル 】</p><br>
+        <div class="kairo_menu_title"><p class="kairo_menu_name">【 クレイ美肌フェイシャル（新規割引） 】</p><br>
           <div class="kairo_contents">
-            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo_menu4.jpeg"/>
-            <p class="kairo_menu_comment">丁寧なクレンジング・洗顔の後、フェイシャルマッサージで血行を良くし、くすみやむくみを解消します。</p>
+            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo-img4.jpg"/>
+            <p class="kairo_menu_comment"><span style="font-weight: bold;">「　お肌のお悩みに合わせたオーダーメイドフェイシャルコースです。　」<br>（しわ、シミ、たるみ、乾燥、ニキビ、若返り）</span><br><br>
+          <span style="display: block; margin: 0 auto; text-align: center;">美顔調整<br>
+          クレイマッサージ（顔・首・デコルテ）<br>
+          美容液導入<br>
+          ドライヘッドマッサージ<br>
+          お仕上げ<br><br>
+          （オプション　極上美容液パック（＋3,000円））<br><br>
+          <span class="menu_fee">〈 所要時間（目安） 約60分 ・・・ 9,900円 〉</span>
+          </p></span>
           </div>
         </div>
-      </div> 
+      </div>
+
+      <div class="kairo_container">
+        <div class="kairo_menu_title"><p class="kairo_menu_name">【 オールハンド・全身トリートメント（クレイクリーム）新規割引 】</p><br>
+          <div class="kairo_contents">
+            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo-img1.jpg"/>  
+              <p class="kairo_menu_comment">モンモリノナイト・クレイクリーム使用<br><br>
+                                            オールハンドの全身トリートメントです。<br><br>
+                                            <span class="menu_fee">〈 所要時間（目安） 約60分 ・・・ 8,800円 〉</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="kairo_container">
+        <div class="kairo_menu_title"><p class="kairo_menu_name">【 ブライダルコース 】</p><br>
+          <div class="kairo_contents">
+            <img class="kairo_image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo-img7.jpg"/>  
+              <p class="kairo_menu_comment">
+              背中、首筋、二の腕、ウエスト〜腰ラインをメインにドレスを美しく着こなせる美ラインをつくっていきます。<br>「美骨調整（ウエストくびれ、肩甲骨、鎖骨）」<br><br>
+                                            ディープクレンジング → バーニングセル → ボディトリートメント → <br>
+                                            コラキューティス、モイスチャーパックorクールパック → フィルムノーブルオイル<br><br>
+                                            <span class="menu_fee">〈 所要時間（目安） 約60分 ・・・ 16,500円 〉</span></p>
+          </div>
+        </div>
+      </div>
       </div>
 
       <div class="menu-link">
-        <a href="<?php echo home_url('/menu-list/'); ?>">詳しくメニューを見る</a>
+        <a href="https://tol-app.jp/s/shgt6zy182gfq2am4m49">予約をする</a>
       </div><br><br>
   </div>
 </div>

@@ -55,12 +55,17 @@ $(function(){
 
     <div class="menu-container">
       <div class="section_title">MENU</div>
-          <img  class="este1-image fade-in fade-in-up" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este1-image.jpeg"/>
-          <p class="menu_title_middle fade-in fade-in-up">TORa オリジナルメニューをはじめ、エンビロン、セルコスメのメニューをご用意。<br><br>
-          人の体がそれぞれ違うように、肌ケアも十人十色。<br>カウンセリングを元に最適なケアをご提案いたします。</p>
+          <img  class="este1-image fade-in fade-in-up" src="<?php echo get_stylesheet_directory_uri(); ?>/images/kairo-hero-img.jpg"/>
+          <p class="menu_title_middle fade-in fade-in-up">カイロプラクティック技術を美容的な観点で美しい姿勢美をつくる「美容カイロテクニック」。<br>
+          骨格、筋肉を整え、さらにより美しい姿勢に整える身体の内部（血液、リンパ）に<br>アプローチするエステティックの技術を融合させ、
+          健康美を創造する美容カイロエステティックです。<br><br>
+        
+          当サロンは、身体の内側にある骨格のケアと外側の皮膚のケア、さらに手技によるトリートメントによって癒しが得られる<br>「三位一体の総合美容法」を確立し、ご提案しています。<br><br>
+          背骨や骨盤のゆがみを徒手によって矯正する治療法、カイロプラクティックの視点からお客様対応をさせていただきます。<br>
+          従いまして、徒手により身体を矯正させていただくだけではなく、体操（運動）・食餌（栄養）・物理（睡眠）の<br>生活改善提案として、健康関連商品も同時にご案内させていただきます。</p>
         
           <div class="menu-link fade-in fade-in-up">
-            <a href="<?php echo home_url('/menu/'); ?>">全てのメニューを見る</a>  
+            <a href="<?php echo home_url('/menu/'); ?>">メニューを見る</a>  
           </div>
     </div>
     
@@ -87,7 +92,7 @@ $(function(){
 					  <img  class="index-home fade-in fade-in-up" src="<?php echo get_stylesheet_directory_uri(); ?>/images/este_room.jpg"/>
           
             <div class="index-access-comment fade-in fade-in-up">
-              <p>【　HEALTH & BEAUTY  TORa　】</p>
+              <p>【　TORa ~health & beauty~　】</p>
               <p>〒381-2223 長野県長野市里島27-2<br>  タウンコートいずみ B102号室</p>
               <p>TEL 090-3408-3514</p>
               <p>営業時間 10：00 〜 17：00 </p>
